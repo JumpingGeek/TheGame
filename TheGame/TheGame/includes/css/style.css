@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#areaDetails td{vertical-align:top;}
+.dojoDndItemAnchor{visibility:hidden};
+#island{
+  margin:0;
+}
+/******LAYOUT******/
+#content {
+  width:1280px;
+  height:800px;
+  overflow:hidden;
+  position:absolute;
+  background-color: yellow;
+}
+#topPanel {
+  position: relative;
+  margin:0 35px 0 35px;
+  z-index: 250;
+  background-color:white;
+  width:100%;
+  height:200px;
+}
+#leftPanel {
+  width:620px;
+  padding-right:35px;
+  height:100%;
+  position: absolute;
+  z-index: 750;
+  left:0;
+  top:0;
+  margin-left:-620px;
+  background-color:green;
+}
+#switch-leftPanel{
+  width:35px;
+  top:0;
+  bottom:0;
+  right:0;
+  text-align:center;
+  padding-top:15px;
+}
+#centerPanel {
+  margin:0 35px 0 35px;
+  position: relative;
+  z-index: 0;
+  background-color:black;
+  color:#888888;
+  width:100%;
+}
+#rightPanel {
+  width:550px;
+  padding-left:35px;
+  height:100%;
+  position: absolute;
+  z-index: 500;
+  right:0;
+  top:0;
+  margin-right:-550px;
+  background-color:green;
+}
+#switch-rightPanel{
+  width:35px;
+  top:0;
+  bottom:0;
+  right:left;
+  text-align:center;
+  padding-top:15px;
+  margin-left:-35px;
+}
+#bottomPanel {
+  position: absolute;
+  bottom:0;
+  z-index: 1000;
+  background-color:white;
+  width:100%;
+  padding-top:35px;
+  height:300px;
+  margin-bottom:-300px;
+}
+#switch-bottomPanel{
+  width:100%;
+  height:35px;
+  top:0;
+  left:0;
+  right:0;
+  text-align:right;
+  padding-right:15px;
+}
+/****END LAYOUT****/
+#mapViewContainer{
+  width:570px;
+  padding:25px;
+}
+#mapView{
+  width:500px;
+  height:500px;
+  overflow:hidden;
+}
+#mapTools{
+  text-align:center;
+}
+#mapTools button{
+  padding:2px;
+}
+.panelSwitch{
+  background-color:red;
+  position:absolute;
+  cursor:pointer;
+}
+#scrollup{
+  margin:0 35px;
+  width:500px;
+  height:35px;
+  background-color:#6B3A16;
+  visibility:hidden;
+  cursor:pointer;
+}
+#scrolldown{
+  margin:0 35px;
+  width:500px;
+  height:35px;
+  background-color:#6B3A16;
+  cursor:pointer;
+}
+#scrollleft{
+  width:35px;
+  height:500px;
+  float:left;
+  background-color:#6B3A16;
+  visibility:hidden;
+  cursor:pointer;
+}
+#scrollright{
+  width:35px;
+  height:500px;
+  float:right;
+  background-color:#6B3A16;
+  cursor:pointer;
+}
+.statistic{
+  width:400px;
+  height:50px;
+  padding:20px;
+}

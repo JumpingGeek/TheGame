@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>The Game</title>
+<link rel="stylesheet" type="text/css" href="includes/css/style.css">
+<link rel="stylesheet" type="text/css" href="includes/js/dijit/themes/dijit.css">
+<script src="includes/js/dojo/dojo.js" 
+    data-dojo-config="async: true,
+                      packages: [
+                        {name:'jquery',       location:'/TheGame/includes/js/library', main:'jquery-1.12.0.min'},
+                        {name:'jquery-timer', location:'/TheGame/includes/js/library', main:'jquery.timer'},
+                        {name:'smartResize',  location:'/TheGame/includes/js/library', main:'smartResize'},
+                        {name:'voroniCore',   location:'/TheGame/includes/js/library', main:'rhill-voronoi-core.min'},
+                        {name:'paper',        location:'/TheGame/includes/js/library', main:'paper'},
+                      ]"></script>
+</head>
+<body>
+  <div id="content"><!-- for Game to fill --></div>
+  <script>
+    define.amd.jQuery = true;
+    require([
+             'jquery',
+             
+             'game/game',
+
+             'dojo/topic',
+             'paper',
+             'dojo/domReady!'
+           ], 
+    function($,Game, topic){
+      $;
+      paper.install(window);
+      Game.start();
+      //$('#switch-leftPanel').trigger('click');//auto open right side
+    });
+  </script>
+</body>
+</html>
